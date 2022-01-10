@@ -1,6 +1,5 @@
 NAME = libftprintf.a
 HEADER = ft_printf.h
-CC = cc
 SRC	= ft_printf.c \
 		parsing.c \
 		utils.c \
@@ -8,22 +7,22 @@ SRC	= ft_printf.c \
 		type_hex.c \
 
 OBJ = $(SRC:.c=.o)
-FLAGC = -Wall -Wextra -Werror -I.$(HEADER)
+FLAGS = -Wall -Wextra -Werror
 AR = ar -rcs
 
 all: $(NAME)
 
-$(NAME): $(OBJ) $(HEADER)
-	$(AR) $(NAME) $(OBJ) $(HEADER)
+$(NAME): $(OBJ)
+	$(AR) $@ $?
 
-%.o: %.c
+%.o: %.c $(HEADER)
 	$(CC) $(FLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
-	rm -f $(NAME)
+	$(RM) $(NAME)
 
 re: fclean all
 
