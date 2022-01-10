@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:42:23 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 15:57:00 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 16:02:40 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 int	ft_printf(const char *format, ...)
 {
 	int	length;
-	va_list ap;
-
+	va_list	ap;
+	
 	length = 0;
 	va_start(ap, format);
 	length = parse_input(format, ap, length);
