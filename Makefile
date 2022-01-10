@@ -1,6 +1,6 @@
 NAME = libftprintf.a
 HEADER = ft_printf.h
-CC = gcc
+CC = cc
 SRC	= ft_printf.c \
 		parsing.c \
 		utils.c \
