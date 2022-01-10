@@ -6,15 +6,15 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:28:31 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 16:05:06 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 17:18:28 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-#include <unistd.h>
-#include <stdarg.h>
+# include <unistd.h>
+# include <stdarg.h>
 
 int		ft_putchar(char c, int *length);
 void	ft_putnbr(int nbr, int *length);

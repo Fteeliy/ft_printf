@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:15:20 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 15:29:17 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 17:20:36 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 void	c_type(va_list ap, int *length)
 {
 	char	c;
+	
 	c = va_arg(ap, int);
 	ft_putchar(c, length);
 }
