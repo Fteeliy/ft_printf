@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:59:25 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 15:38:42 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 16:05:29 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_putchar(char c, int *length)
 {
 	write(1, &c, 1);
 	(*length)++;
-	return (length);
+	return (*length);
 }
 
 void	ft_putnbr(int nbr, int *length)

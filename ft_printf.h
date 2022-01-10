@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:28:31 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 15:59:37 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 16:05:06 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include <unistd.h>
 #include <stdarg.h>
 
-int	ft_putchar(char c, int *length);
+int		ft_putchar(char c, int *length);
 void	ft_putnbr(int nbr, int *length);
 void	ft_putuns(unsigned int nbr, int *length);
 void	ft_puthex(char *str, unsigned long long nbr, int *length);

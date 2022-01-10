@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:54:23 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 16:00:39 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 16:08:29 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int	parse_input(const char *str, va_list ap, int length)
 			str++;
 		}
 		else
-			ft_purchar(*str++, &length);
+			ft_putchar(*str++, &length);
 	}
 	return (length);
 }

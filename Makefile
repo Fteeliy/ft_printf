@@ -2,7 +2,7 @@ NAME = libftprintf.a
 HEADER = ft_printf.h
 CC = gcc
 SRC	= ft_printf.c \
-		parcing.c \
+		parsing.c \
 		utils.c \
 		type.c \
 		type_hex.c \
@@ -19,7 +19,8 @@ $(NAME): $(OBJ) $(HEADER)
 %.o: %.c
 	$(CC) $(FLAGS) -c $< -o $@
 
-clean: rm -f $(OBJ)
+clean:
+	rm -f $(OBJ)
 
 fclean: clean
 	rm -f $(NAME)

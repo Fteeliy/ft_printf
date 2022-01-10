@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:31:56 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 15:34:29 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 16:07:46 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	p_type(char *str, va_list ap, int *length)
 	adr = va_arg(ap, unsigned long long);
 	ft_putchar('0', length);
 	ft_putchar('x', length);
-	ft_puthex(str, ap, length);
+	ft_puthex(str, adr, length);
 }
