@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 15:15:20 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 17:20:36 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 17:28:40 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	c_type(va_list ap, int *length)
 {
 	char	c;
-	
+
 	c = va_arg(ap, int);
 	ft_putchar(c, length);
 }
@@ -23,7 +23,7 @@ void	c_type(va_list ap, int *length)
 void	s_type(va_list ap, int *length)
 {
 	char	*s;
-	
+
 	s = va_arg(ap, char *);
 	if (!s)
 		s = "(null)";
@@ -34,7 +34,7 @@ void	s_type(va_list ap, int *length)
 void	d_i_type(va_list ap, int *length)
 {
 	int	nbr;
-	
+
 	nbr = va_arg(ap, int);
 	ft_putnbr(nbr, length);
 }

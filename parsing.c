@@ -6,7 +6,7 @@
 /*   By: wdwain <wdwain@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 14:54:23 by wdwain            #+#    #+#             */
-/*   Updated: 2022/01/10 17:21:19 by wdwain           ###   ########.fr       */
+/*   Updated: 2022/01/10 17:30:10 by wdwain           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	parse_process(char *str, va_list ap, int *length)
 		d_i_type(ap, length);
 	else if (*str == 'u')
 		u_type(ap, length);
-	else if (*str == 'x'|| *str == 'X')
+	else if (*str == 'x' || *str == 'X')
 		x_type(str, ap, length);
 	else if (*str == 'p')
 		p_type(str, ap, length);
